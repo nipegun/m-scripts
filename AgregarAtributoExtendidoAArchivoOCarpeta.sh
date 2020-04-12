@@ -12,3 +12,4 @@
 # AgregarAtributoExtendidoAArchivoOCarpeta ~/Desktop/Prueba password "El perro salió de viaje"
 
 xattr -w $2 $3 $1
+
