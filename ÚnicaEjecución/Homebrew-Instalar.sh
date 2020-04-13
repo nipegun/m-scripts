@@ -9,9 +9,6 @@
 #  Script de NiPeGun para instalar Homebrew en macOS
 #-----------------------------------------------------
 
-CantArgsEsperados=1
-ArgsInsuficientes=65
-
 ColorRojo='\033[1;31m'
 ColorVerde='\033[1;32m'
 FinColor='\033[0m'
