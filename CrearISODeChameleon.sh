@@ -5,6 +5,18 @@
 # Si se te llena la boca hablando de libertad entonces hazlo realmente libre.
 # No tienes que aceptar ningún tipo de términos de uso o licencia para utilizarlo o modificarlo porque va sin CopyLeft.
 
+#----------------------------------------------------
+#  Script de NiPeGun para crear un ISO de chameleon
+#----------------------------------------------------
+
+ColorRojo='\033[1;31m'
+ColorVerde='\033[1;32m'
+FinColor='\033[0m'
+
+echo ""
+echo -e "${ColorVerde}Creando ISO de Chameleon...${FinColor}"
+echo ""
+
 mkdir ~/MiISOdeChameleon
 mkdir ~/MiISOdeChameleon/Extra
 cd ~/MiISOdeChameleon
