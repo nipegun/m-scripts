@@ -15,6 +15,14 @@
 # Ejecutar con
 # sudo /Users/usuario/nipe-scripts/macOS/CopiarCarpetaDeUsuariosAlVolumen NombreDeVolumen
 #
+
+ColorRojo='\033[1;31m'
+ColorVerde='\033[1;32m'
+FinColor='\033[0m'
+
+echo ""
+echo -e "${ColorVerde}Copiando carpeta de usuario...${FinColor}"
+echo ""
 sudo mkdir /Volumes/$1/Usuarios
 sudo cp -Rv /Users/ /Volumes/$1/Usuarios
 
