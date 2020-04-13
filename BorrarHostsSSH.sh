@@ -9,5 +9,12 @@
 #  Script de NiPeGun para borrar la configuración de los hosts SSH conocidos en macOS
 #--------------------------------------------------------------------------------------
 
+ColorRojo='\033[1;31m'
+ColorVerde='\033[1;32m'
+FinColor='\033[0m'
+
+echo ""
+echo -e "${ColorVerde}Borrando hosts SSH conocidos...${FinColor}"
+echo ""
 rm ~/.ssh/known_hosts
 
