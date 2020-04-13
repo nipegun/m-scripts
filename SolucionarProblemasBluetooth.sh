@@ -5,10 +5,16 @@
 # Si se te llena la boca hablando de libertad entonces hazlo realmente libre.
 # No tienes que aceptar ningún tipo de términos de uso o licencia para utilizarlo o modificarlo porque va sin CopyLeft.
 
-#------------------------------------------------------------
-#  Script de NiPeGun para cargar el script de inicio de
-#  Midnight Commander ubicado en /root/MidnightCommander
-#------------------------------------------------------------
+#----------------------------------------------------------------------------
+#  Script de NiPeGun borrar todas las configuraciones Bluetooth disponibles
+#----------------------------------------------------------------------------
 
+ColorRojo='\033[1;31m'
+ColorVerde='\033[1;32m'
+FinColor='\033[0m'
+
+echo ""
+echo -e "${ColorVerde}Borrando configuración bluetooth...${FinColor}"
+echo ""
 sudo rm /Library/Preferences/com.apple.Bluetooth.plist
 
