@@ -17,7 +17,7 @@ ColorVerde='\033[1;32m'
 FinColor='\033[0m'
 
 echo ""
-echo -e "  $0 ${ColorVerde}Instalando hombrew...${FinColor}"
+echo -e "  $0 ${ColorVerde}Instalando Homebrew...${FinColor}"
 echo ""
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
