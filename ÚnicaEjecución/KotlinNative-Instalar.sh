@@ -19,6 +19,12 @@ FinColor='\033[0m'
 echo ""
 echo -e "${ColorVerde}Instalando Kotlin...${FinColor}"
 echo ""
+brew update
+brew install kotlin
+
+echo ""
+echo -e "${ColorVerde}Instalando Kotlin/Native...${FinColor}"
+echo ""
 NroVersKotlinHomebrew=$(brew info kotlin | grep stable | cut -f3 -d" ")
 echo ""
 echo "La versión estable instalada mediante Hombrebrew es la $NroVersKotlinHomebrew"
