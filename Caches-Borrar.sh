@@ -5,9 +5,9 @@
 # Si se te llena la boca hablando de libertad entonces hazlo realmente libre.
 # No tienes que aceptar ningún tipo de términos de uso o licencia para utilizarlo o modificarlo porque va sin CopyLeft.
 
-#---------------------------------------------------------------------
-#  Script de NiPeGun para agregar un atributo extendido a un archivo
-#---------------------------------------------------------------------
+#--------------------------------------------------
+#  Script de NiPeGun para borrar todos los cachés
+#--------------------------------------------------
 
 # Borrar todo el contenido de /S/L/E
 sudo find /System/Library/Caches/* -type d -exec rm -rf {} \;
