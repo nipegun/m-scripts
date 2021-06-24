@@ -12,20 +12,20 @@
 echo ""
 echo "  Borrando todo el contenido de /S/L/E..."
 echo ""
-sudo find /System/Library/Caches/* -type d -exec rm -rf {} \;
-sudo find /System/Library/Caches/* -type f -exec rm -rf {} \;
+sudo find /System/Library/Caches/ -type d -exec rm -rf {} \;
+sudo find /System/Library/Caches/ -type f -exec rm -rf {} \;
 
 echo ""
 echo "  Borrando todo el contenido de /L/E..."
 echo ""
-sudo find /Library/Caches/* -type d -exec rm -rf {} \;
-sudo find /Library/Caches/* -type f -exec rm -rf {} \;
+sudo find /Library/Caches/ -type d -exec rm -rf {} \;
+sudo find /Library/Caches/ -type f -exec rm -rf {} \;
 
 echo ""
 echo "  Borrando todo el contenido de ~/Library/Caches/..."
 echo ""
-sudo find ~/Library/Caches/* -type d -exec rm -rf {} \;
-sudo find ~/Library/Caches/* -type f -exec rm -rf {} \;
+sudo find ~/Library/Caches/ -type d -exec rm -rf {} \;
+sudo find ~/Library/Caches/ -type f -exec rm -rf {} \;
 
 echo ""
 echo "  Reparando permisos..."
