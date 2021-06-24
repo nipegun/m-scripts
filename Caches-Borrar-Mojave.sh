@@ -27,15 +27,15 @@ echo ""
 echo "  Borrando todo el cache del usuario..."
 echo ""
 #mv ~/Library/Caches/* ~/.Trash/
-find ~/Library/Caches/ -type d -exec rm -rf {} \;
 find ~/Library/Caches/ -type f -exec rm -rf {} \;
+find ~/Library/Caches/ -type d -exec rm -rf {} \;
 
 echo ""
 echo "  Borrando todo el cache del sistema..."
 echo ""
 #sudo rm -rf /System/Library/Caches
-sudo find /System/Library/Caches/ -type d -exec rm -rf {} \;
 sudo find /System/Library/Caches/ -type f -exec rm -rf {} \;
+sudo find /System/Library/Caches/ -type d -exec rm -rf {} \;
 
 echo ""
 echo "  Borrando el cache del kernel..."
