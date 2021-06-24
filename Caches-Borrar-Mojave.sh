@@ -26,14 +26,16 @@ sudo killall -HUP mDNSResponder
 echo ""
 echo "Borrando todo el cache del usuario..."
 echo ""
-mv ~/Library/Caches/* ~/.Trash/
+#mv ~/Library/Caches/* ~/.Trash/
+find /System/Library/Caches/* -type d -exec rm -rf {} \;
+find /System/Library/Caches/* -type f -exec rm -rf {} \;
 
 echo ""
 echo "Borrando todo el cache del sistema..."
 echo ""
-sudo rm /System/Library/Caches
-
-
+#sudo rm -rf /System/Library/Caches
+sudo find /System/Library/Caches/* -type d -exec rm -rf {} \;
+sudo find /System/Library/Caches/* -type f -exec rm -rf {} \;
 
 echo ""
 echo "Borrando el cache del kernel..."
