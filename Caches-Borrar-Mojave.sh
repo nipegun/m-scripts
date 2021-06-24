@@ -14,29 +14,29 @@ ColorVerde='\033[1;32m'
 FinColor='\033[0m'
 
 echo ""
-echo -e "${ColorVerde}Borrando cachés de Mojave...${FinColor}"
+echo -e "${ColorVerde}  Borrando cachés de Mojave...${FinColor}"
 echo ""
 
 echo ""
-echo "Borrando el cache de DNS..."
+echo "  Borrando el cache de DNS..."
 echo ""
 sudo dscacheutil -flushcache
 sudo killall -HUP mDNSResponder
 
 echo ""
-echo "Borrando todo el cache del usuario..."
+echo "  Borrando todo el cache del usuario..."
 echo ""
 #mv ~/Library/Caches/* ~/.Trash/
 find ~/Library/Caches/* -type d -exec rm -rf {} \;
 find ~/Library/Caches/* -type f -exec rm -rf {} \;
 
 echo ""
-echo "Borrando todo el cache del sistema..."
+echo "  Borrando todo el cache del sistema..."
 echo ""
 #sudo rm -rf /System/Library/Caches
 sudo find /System/Library/Caches/* -type d -exec rm -rf {} \;
 sudo find /System/Library/Caches/* -type f -exec rm -rf {} \;
 
 echo ""
-echo "Borrando el cache del kernel..."
+echo "  Borrando el cache del kernel..."
 echo ""
