@@ -9,19 +9,27 @@
 #  Script de NiPeGun para borrar todos los cachés
 #--------------------------------------------------
 
-# Borrar todo el contenido de /S/L/E
+echo ""
+echo "  Borrando todo el contenido de /S/L/E..."
+echo ""
 sudo find /System/Library/Caches/* -type d -exec rm -rf {} \;
 sudo find /System/Library/Caches/* -type f -exec rm -rf {} \;
 
-# Borrar todo el contenido de /L/E
+echo ""
+echo "  Borrando todo el contenido de /L/E..."
+echo ""
 sudo find /Library/Caches/* -type d -exec rm -rf {} \;
 sudo find /Library/Caches/* -type f -exec rm -rf {} \;
 
-# Borrar todo el contenido de ~/Library/Caches/
+echo ""
+echo "  Borrando todo el contenido de ~/Library/Caches/..."
+echo ""
 sudo find ~/Library/Caches/* -type d -exec rm -rf {} \;
 sudo find ~/Library/Caches/* -type f -exec rm -rf {} \;
 
-# Reparar permisos
+echo ""
+echo "  Reparando permisos..."
+echo ""
 sudo chmod -Rf 755 /S*/L*/E*
 sudo chmod -Rf 755 /L*/E*
 sudo chown -Rf 0:0 /S*/L*/E*
