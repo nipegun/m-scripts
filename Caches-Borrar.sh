@@ -10,13 +10,13 @@
 #--------------------------------------------------
 
 echo ""
-echo "  Borrando todo el contenido de /S/L/E..."
+echo "  Borrando todo el contenido de /S/L/C..."
 echo ""
 sudo find /System/Library/Caches/ -type f -exec rm -rf {} \; 2> /dev/null
 sudo find /System/Library/Caches/ -type d -exec rm -rf {} \; 2> /dev/null
 
 echo ""
-echo "  Borrando todo el contenido de /L/E..."
+echo "  Borrando todo el contenido de /L/C..."
 echo ""
 sudo find /Library/Caches/ -type f -exec rm -rf {} \; 2> /dev/null
 sudo find /Library/Caches/ -type d -exec rm -rf {} \; 2> /dev/null
