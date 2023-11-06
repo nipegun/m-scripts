@@ -9,7 +9,7 @@
 # Script de NiPeGun para borrar todos los caches en MacOS 10.14.x (Mojave)
 #
 # Ejecución remota:
-#   curl -sL https://raw.githubusercontent.com/nipegun/m-scripts/master/Caches-Borrar-Mojave.sh | bash
+#   sudo curl -sL https://raw.githubusercontent.com/nipegun/m-scripts/master/Caches-Borrar-Mojave.sh | bash
 # ----------
 
 cColorRojo='\033[1;31m'
