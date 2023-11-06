@@ -5,14 +5,17 @@
 # Si se te llena la boca hablando de libertad entonces hazlo realmente libre.
 # No tienes que aceptar ningún tipo de términos de uso o licencia para utilizarlo o modificarlo porque va sin CopyLeft.
 
-#--------------------------------------------------
-#  Script de NiPeGun para borrar todos los cachés ( -- Script No funcional, todavía)
-#--------------------------------------------------
+# ----------
+# Script de NiPeGun para borrar todos los cachés ( -- Script No funcional, todavía)
+#
+# Ejecución remota:
+#   curl -sL https://raw.githubusercontent.com/nipegun/m-scripts/master/Caches-Reconstruir.sh | bash
+# ----------
 
 #Mojave
-sudo kextcache -prelinked-kernel
-sudo kextcache -system-prelinked-kernel
-sudo kextcache -system-caches
+  sudo kextcache -prelinked-kernel
+  sudo kextcache -system-prelinked-kernel
+  sudo kextcache -system-caches
 
 #sudo kextcache -update-volume /
 
