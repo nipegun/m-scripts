@@ -9,7 +9,7 @@
 # Script de NiPeGun para borrar todos los cachés ( -- Script No funcional, todavía)
 #
 # Ejecución remota:
-#   curl -sL https://raw.githubusercontent.com/nipegun/m-scripts/master/Caches-Reconstruir.sh | bash
+#   sudo curl -sL https://raw.githubusercontent.com/nipegun/m-scripts/master/Caches-Reconstruir.sh | bash
 # ----------
 
 #Mojave
