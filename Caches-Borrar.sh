@@ -115,47 +115,51 @@
     echo -e "${cColorAzulClaro}  Iniciando el script de borrado de caches para macOS 10.14 (Mojave)...${cFinColor}"
     echo ""
 
-    echo ""
-    echo "    Borrando el cache de DNS..."
-    echo ""
-    sudo dscacheutil -flushcache
-    sudo killall -HUP mDNSResponder
+    # Caches del usuario
 
-    echo ""
-    echo "    Borrando todo el cache del usuario (~/Library/Caches/)..."
-    echo ""
-    #mv ~/Library/Caches/* ~/.Trash/
-    find ~/Library/Caches/ -type f -print -exec rm -rf {} \; 2> /dev/null
-    find ~/Library/Caches/ -type d -print -exec rm -rf {} \; 2> /dev/null
-    sudo find ~/Library/Caches/ -type f -print -exec rm -rf {} \; 2> /dev/null
-    sudo find ~/Library/Caches/ -type d -print -exec rm -rf {} \; 2> /dev/null
+      echo ""
+      echo "    Borrando el cache de DNS..."
+      echo ""
+      sudo dscacheutil -flushcache
+      sudo killall -HUP mDNSResponder
 
-    echo ""
-    echo "    Borrando todo el cache del sistema..."
-    echo ""
-    #sudo rm -rf /System/Library/Caches
-    sudo find /System/Library/Caches/ -type f -print -exec rm -rf {} \; 2> /dev/null
-    sudo find /System/Library/Caches/ -type d -print -exec rm -rf {} \; 2> /dev/null
+      echo ""
+      echo "    Borrando todo el cache del usuario (~/Library/Caches/)..."
+      echo ""
+      #mv ~/Library/Caches/* ~/.Trash/
+      find ~/Library/Caches/ -type f -print -exec rm -rf {} \; 2> /dev/null
+      find ~/Library/Caches/ -type d -print -exec rm -rf {} \; 2> /dev/null
+      sudo find ~/Library/Caches/ -type f -print -exec rm -rf {} \; 2> /dev/null
+      sudo find ~/Library/Caches/ -type d -print -exec rm -rf {} \; 2> /dev/null
 
-    echo ""
-    echo "    Borrando todo el contenido de /S/L/C..."
-    echo ""
-    sudo find /System/Library/Caches/ -type f -print -exec rm -rf {} \; 2> /dev/null
-    sudo find /System/Library/Caches/ -type d -print -exec rm -rf {} \; 2> /dev/null
+    # Caches del sistema
 
-    echo ""
-    echo "  Borrando todo el contenido de /L/C..."
-    echo ""
-    sudo find /Library/Caches/ -type f -print -exec rm -rf {} \; 2> /dev/null
-    sudo find /Library/Caches/ -type d -print -exec rm -rf {} \; 2> /dev/null
+      # Individuales
 
-    echo ""
-    echo "  Reparando permisos..."
-    echo ""
-    sudo chmod -Rf 755 /S*/L*/E*
-    sudo chmod -Rf 755 /L*/E*
-    sudo chown -Rf 0:0 /S*/L*/E*
-    sudo chown -Rf 0:0 /L*/E*
+        # Prelinked Kernel: caché del kernel que incluye kexts que macOS anticipa que serán necesarios durante el arranque. 
+          sudo rm -f /System/Library/Caches/com.apple.kext.caches/Startup/kernelcache
+        # System Prelinked Kernel: similar al Prelinked Kernel, pero específico para el sistema actual.
+          sudo rm -f /System/Library/PrelinkedKernels/prelinkedkernel
+        # System Caches: caches del sistema que incluyen caches de kexts.
+          sudo kextcache --clear-staging
+          sudo rm -rf /Library/Caches/com.apple.kext.caches
+          sudo rm -rf /System/Library/Caches/com.apple.kext.caches
+
+      # Completos
+
+        # /System/Library/Caches/
+          sudo find /System/Library/Caches/ -type f -print -exec rm -rf {} \; 2> /dev/null
+          sudo find /System/Library/Caches/ -type d -print -exec rm -rf {} \; 2> /dev/null
+
+        # /Library/Caches
+          sudo find /Library/Caches/ -type f -print -exec rm -rf {} \; 2> /dev/null
+          sudo find /Library/Caches/ -type d -print -exec rm -rf {} \; 2> /dev/null
+
+    # Reparar permisos
+      sudo chmod -Rf 755 /S*/L*/E*
+      sudo chmod -Rf 755 /L*/E*
+      sudo chown -Rf 0:0 /S*/L*/E*
+      sudo chown -Rf 0:0 /L*/E*
 
   elif [ $cVerSO == "10.13" ]; then
 
