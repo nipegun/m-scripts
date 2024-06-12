@@ -52,7 +52,7 @@
   if [ $cVerSO == "15" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 15 (Sequoia)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 15 (Sequoia)...${cFinColor}"
     echo ""
 
     echo ""
@@ -62,7 +62,7 @@
   elif [ $cVerSO == "14" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 14 (Sonoma)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 14 (Sonoma)...${cFinColor}"
     echo ""
 
     echo ""
@@ -72,7 +72,7 @@
   elif [ $cVerSO == "13" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 13 (Ventura)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 13 (Ventura)...${cFinColor}"
     echo ""
 
     echo ""
@@ -82,7 +82,7 @@
   elif [ $cVerSO == "12" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 12 (Monterey)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 12 (Monterey)...${cFinColor}"
     echo ""
 
     echo ""
@@ -92,7 +92,7 @@
   elif [ $cVerSO == "11" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 11 (Big Sur)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 11 (Big Sur)...${cFinColor}"
     echo ""
 
     echo ""
@@ -102,7 +102,7 @@
   elif [ $cVerSO == "10.15" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.15 (Catalina)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.15 (Catalina)...${cFinColor}"
     echo ""
 
     echo ""
@@ -112,7 +112,7 @@
   elif [ $cVerSO == "10.14" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.14 (Mojave)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.14 (Mojave)...${cFinColor}"
     echo ""
 
     # Ejecutar el script de instalación
@@ -124,7 +124,7 @@
   elif [ $cVerSO == "10.13" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.13 (High Sierra)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.13 (High Sierra)...${cFinColor}"
     echo ""
 
     echo ""
@@ -134,7 +134,7 @@
   elif [ $cVerSO == "10.12" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.12 (Sierra)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.12 (Sierra)...${cFinColor}"
     echo ""
 
     echo ""
@@ -144,7 +144,7 @@
   elif [ $cVerSO == "10.11" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.11 (El Capitan)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.11 (El Capitan)...${cFinColor}"
     echo ""
 
     echo ""
@@ -154,7 +154,7 @@
   elif [ $cVerSO == "10.10" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.10 (Yosemite)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.10 (Yosemite)...${cFinColor}"
     echo ""
 
     echo ""
@@ -164,7 +164,7 @@
   elif [ $cVerSO == "10.9" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.9 (Mavericks)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.9 (Mavericks)...${cFinColor}"
     echo ""
 
     echo ""
@@ -174,7 +174,7 @@
   elif [ $cVerSO == "10.8" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.8 (Mountain Lion)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.8 (Mountain Lion)...${cFinColor}"
     echo ""
 
     echo ""
@@ -184,7 +184,7 @@
   elif [ $cVerSO == "10.7" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.7 (Lion)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.7 (Lion)...${cFinColor}"
     echo ""
 
     echo ""
@@ -194,7 +194,7 @@
   elif [ $cVerSO == "10.6" ]; then
 
     echo ""
-    echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para macOS 10.6 (Snow Leopard)...${cFinColor}"
+    echo -e "${cColorAzulClaro}  Iniciando el script de instalación y configuración de HomeBrew para macOS 10.6 (Snow Leopard)...${cFinColor}"
     echo ""
 
     echo ""
